@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Eye in the Sky</title>
+
+  <script src="scroll.js"></script>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+
+<body>
+  <!-- Welcome page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="start-page">
+    <video autoplay muted loop>
+      <source src="videos/clouds.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="center">
+        <a href="#topnav" class="button">Explore project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="topnav" id="topnav">
+    <a class="menu-item-4" href="#team">Team</a>
+    <a class="menu-item-3" href="#theGame">The Game</a>
+    <a class="menu-item-2" href="#technology">Technology</a>
+    <a class="menu-item-1" href="#about">About</a>
+  </div>
+
+  <!-- About page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="about">
+    <div class="container">
+      <h2>
+        About
+      </h2>
+      <p>Eye in the Sky is a project created for the course Advanced Graphics and Interaction at KTH in the fall of
+        2020.
+      </p>
+
+      <div class="row">
+        <div class="four columns" id="about-section">
+          <h3 id="about-title"> Goal</h3>
+          <p> The goal of this project was... </p>
+        </div>
+
+        <div class="four columns" id="about-section">
+          <h3 id="about-title"> Motivation </h3>
+          <p> The goal of this project was... </p>
+        </div>
+
+        <div class="four columns" id="about-section">
+          <h3 id="about-title"> Process </h3>
+          <p> The goal of this project was... </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="technology">
+    <div class="container">
+      <h2>Technology</h2>
+
+      <div class="row">
+        <div class="six columns" id="technology-info">
+          <img src="images/unity.png">
+          <h3>Unity</h3>
+          <p> Unity has been used to ...</p>
+        </div>
+
+        <div class="six columns" id="technology-info">
+          <img src="images/blender.png">
+          <h3>Blender</h3>
+          <p> Blender has been used for ...</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Game page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="theGame">
+    <h2>The game</h2>
+    <div id="game">
+      <img id="eyeintheSky" src="images/eyeintheskyimage.png">
+      <div class="container">
+        <img id="cloud" src="images/cloud.png">
+        <p>Eye in the sky is an asymetric multiplayer game that can be played on either a desktop or tablet.
+          The players can either play on the ground and try to collect all pineapples and bring them back to the home
+          base before the time runs out or play as the <i>Eye in the Sky </i>
+          who tries to interfere with the other players and stop them from completing their mission.
+        </p>
+      </div>
+
+      <h2> Video here </h2>
+
+      <h2>Images here</h2>
+    </div>
+  </div>
+
+  <!-- Team page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <h2>The team</h2>
+  <div id="team">
+    <video autoplay muted loop>
+      <source src="videos/clouds.mp4" type="video/mp4">
+    </video>
+
+    <div id="team-content" class="container">
+      <div class="row">
+        <div class="four columns">
+          <img id="portrait" src="images/adelina.jpg">
+          <h3>Adelina Andersen</h3>
+          <h4> 3D Graphics | Interaction mechanics </h4>
+          <p>
+            Text about what we have done here, bla bla bla
+          </p>
+        </div>
+
+        <div class="four columns">
+          <img id="portrait" src="images/lotta.jpg">
+          <h3>Anne-Charlot Scholz</h3>
+          <h4> 3D Graphics | Interaction mechanics </h4>
+          <p>
+            Text about what we have done here, bla bla bla
+          </p>
+        </div>
+
+        <div class="four columns">
+          <img id="portrait" src="images/adelina.jpg">
+          <h3>Anton Porsbjer</h3>
+          <h4> Gameplay | Network implementation </h4>
+          <p>
+            Text about what we have done here, bla bla bla
+          </p>
+        </div>
+      </div>
+
+      <div id="bottom-portraits" class="row">
+        <div class="four columns">
+          <img id="portrait" src="images/adelina.jpg">
+          <h3>Jenna Smulter</h3>
+          <h4> 2D & 3D Graphics </h4>
+          <p>
+            Text about what we have done here, bla bla bla
+          </p>
+        </div>
+
+        <div class="four columns">
+          <img id="portrait" src="images/adelina.jpg">
+          <h3>Konrad Wihl</h3>
+          <h4> Interaction programming | Network </h4>
+          <p>
+            Text about what we have done here, bla bla bla
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

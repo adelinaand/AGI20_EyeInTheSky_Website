@@ -1,0 +1,453 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  left: 0;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; 
+  max-width: 100vw;
+  margin: 0;
+}
+
+
+#about,
+#technology,
+#team
+ {
+  margin-top: 10vh;
+  min-height: 100vh;
+}  
+
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  color: #385c5e;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h4 {
+  color: #5F9EA0;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+i {
+  color: #385c5e;
+}
+
+/*--------------------------------------------------------------
+# Start page
+--------------------------------------------------------------*/
+
+#start-page {
+  height: 100vh;
+}
+
+#start-page video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+.button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    color: #fff;
+    background: #5F9EA0;
+    margin-top: 80vh;
+  }
+  
+.button:hover{
+    background: #fff;
+    color: #5F9EA0;
+    border-color: none;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.topnav {
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  background: #5f9ea0;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+.topnav a {
+  float: right;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 25px;
+  width: 140px;
+  height: 100%;
+}
+
+.topnav a:hover {
+  color: 	#385c5e;
+}
+
+.current-menu-item {
+  background:#385c5e7a;
+
+}
+
+/*--------------------------------------------------------------
+# About page
+--------------------------------------------------------------*/
+
+#about-section{
+  border: 2px;
+  background: #5f9ea07a;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#about-title{
+  background-image: url('images/sky.jpeg');
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/*--------------------------------------------------------------
+# Technology
+--------------------------------------------------------------*/
+#technology img {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#technology h3 {
+  font-weight: 500;
+  color: #5F9EA0;
+  size: 35px;
+}
+
+#technology-info {
+  border: solid;
+  padding: 10px;
+  margin-top: 5vh;
+}
+
+/*--------------------------------------------------------------
+# The game
+--------------------------------------------------------------*/
+#game {
+  left: 0;
+  background:linear-gradient(#55BBED 40%, white);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#eyeintheSky{
+  left: 0;
+  width:100vw;
+}
+
+#cloud {
+  width: 80vw;
+  padding: 25px;
+  display: block;
+}
+
+#game p{
+  font-size: 1.5vw;
+  position: absolute;
+  text-align: justify;
+  top: 60%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+#theGame {
+  margin-bottom: 20vh;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+#team video{
+  position: absolute;
+  height: 140vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+#team-content{
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.603);
+}
+
+#portrait{
+  width: 60%;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 3px;
+}
+
+#team h4 {
+  color: #385c5e;
+}
+
+@media (min-width: 550px) {
+  #bottom-portraits {
+    margin-left: 19.33%;
+    overflow: hidden;
+  }
+
+  #bottom-portrait img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  #team video{
+    position: absolute;
+    height: 400vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: fill;
+  }
+}
+
