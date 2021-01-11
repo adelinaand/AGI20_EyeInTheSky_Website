@@ -1,3 +1,11 @@
+/* Grid custom color scheme */
+:root {
+  --primary-color: #2a30a5;
+  --secondary-color: #00f2ff7a;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #4697ff;
+}
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -271,14 +279,14 @@ i {
     font-size: 16px;
     letter-spacing: 1px;
     border-radius: 50px;
-    color: #fff;
-    background: #5F9EA0;
+    color: var(--primary-text-color);
+    background: var(--primary-color);
     margin-top: 80vh;
   }
   
 .button:hover{
-    background: #fff;
-    color: #5F9EA0;
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
     border-color: none;
   }
 
@@ -295,7 +303,7 @@ i {
   left: 0;
   width: 100vw;
   z-index: 2;
-  background: #5f9ea0;
+  background: var(--primary-color);
   height: 50px;
   position: -webkit-sticky;
   position: sticky;
@@ -309,7 +317,7 @@ i {
   padding-left: 1vw;
   padding-right: 1vw;
   text-decoration: none;
-  color: black;
+  color: var(--primary-text-color);
   font-family: Montserrat;
   font-weight: 300;
   font-size: 25px;
@@ -318,11 +326,11 @@ i {
 }
 
 .topnav a:hover {
-  color: 	#385c5e;
+  color: 	var(--secondary-text-color);
 }
 
 .current-menu-item {
-  background:#385c5e7a;
+  background:var(--secondary-color);
 
 }
 
@@ -332,7 +340,7 @@ i {
 
 #about-section{
   border: 2px;
-  background: #5f9ea07a;
+  background: var(--secondary-color);
   border-radius: 5px;
   margin-top: 5px;
 }
