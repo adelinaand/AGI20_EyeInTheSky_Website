@@ -1,9 +1,10 @@
 /* CSS custom color scheme */
 :root {
-  --primary-color: #2a30a5;
-  --secondary-color: #00f2ff7a;
+  --primary-color: #f49f0a;
+  --secondary-color: #618b4a;
+  --third-color: #bbdef0;
   --primary-text-color: #ffffff;
-  --secondary-text-color: #4697ff;
+  --secondary-text-color: #efca08;
 }
 
 /* Grid
@@ -340,13 +341,13 @@ i {
 
 #about-section{
   border: 2px;
-  background: var(--secondary-color);
+  background: var(--third-color);
   border-radius: 5px;
   margin-top: 5px;
 }
 
 #about-title{
-  background-image: url('images/sky.jpeg');
+  background-image: url('images/sky2.jpg');
   font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
