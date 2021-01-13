@@ -1,7 +1,7 @@
 /* CSS custom color scheme */
 :root {
   --primary-color: #2a30a5;
-  --secondary-color: #00f2ff7a;
+  --secondary-color: #dcf4fb;
   --primary-text-color: #ffffff;
   --secondary-text-color: #4697ff;
 }
@@ -13,7 +13,7 @@
   width: 100%;
   max-width: 100vw;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -25,7 +25,8 @@
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; }
+    padding: 0;
+}
 }
 
 /* For devices larger than 550px */
@@ -193,7 +194,6 @@ body {
   margin: 0;
 }
 
-
 #about,
 #technology,
 #team
@@ -250,10 +250,16 @@ h4 {
 p {
   text-align: center;
   font-size: 18px;
+  font-family: montserrat;
 }
 
 i {
   color: #385c5e;
+}
+
+#justfy-text {
+  text-align: justify;
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -331,8 +337,82 @@ i {
 
 .current-menu-item {
   background:var(--secondary-color);
-
 }
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .topnav a {
+    display: none;
+  }
+
+  .current-menu-item {
+    background:none;
+  }
+  
+  .menu-icon{
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    }
+
+    
+    .line{
+    height: .2rem;
+    width: 2.5rem;
+    margin-bottom: .6rem;
+    background-color: #222;
+    transition: all .4s;
+    }
+    
+    .checkbox:checked ~ .navigation{
+    left: 8rem;
+    transition: all .4s;
+    }
+    
+    .checkbox:checked ~ .topnav .line-1{
+    transform: rotate(-45deg) translate(-12px, 6px);
+    width: 2.5rem;
+    transition: all .4s;
+    }
+    
+    .checkbox:checked ~ .topnav .line-2{
+    opacity: 0;
+    transition: all .4s;
+    }
+    
+    .checkbox:checked ~ .topnav .line-3{
+    transform: rotate(45deg) translate(-12px, -6px);
+    width: 2.5rem;
+    transition: all .4s;
+    }
+
+    .checkbox:checked ~ .topnav{
+      float: right;
+      left: 0;
+      width: 50vw;
+      z-index: 2;
+      background: var(--primary-color);
+      height: 100%;
+      top: 0;
+      box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+  }
+
+  .checkbox:checked ~ .topnav a{
+      display: block;
+      float: right;
+      clear: both;
+      text-align: right;
+      margin-top: 10%;
+      margin-right: 20px;
+      margin-bottom: 10px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # About page
@@ -342,7 +422,7 @@ i {
   border: 2px;
   background: var(--secondary-color);
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 #about-title{
@@ -392,21 +472,34 @@ i {
 
 #cloud {
   width: 80vw;
-  padding: 25px;
-  display: block;
+  vertical-align: middle;
 }
 
 #game p{
-  font-size: 1.5vw;
+  font-size: 3vh;
   position: absolute;
   text-align: justify;
   top: 60%;
-  left: 52%;
+  left: 55%;
   transform: translate(-50%, -50%);
+  width: 60%;
+  vertical-align: middle;
 }
 
 #theGame {
   margin-bottom: 20vh;
+}
+
+@media (max-width: 1000px) {
+  #cloud {
+    height: 400px;
+    left: 0;
+  }
+  #game p{
+    font-size: 13px;
+    width: 75%;
+    margin-top: 11%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -423,6 +516,7 @@ i {
 #team-content{
   margin-top: 50px;
   background: rgba(255, 255, 255, 0.603);
+  padding: 15px; 
 }
 
 #portrait{
@@ -438,7 +532,7 @@ i {
   color: #385c5e;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   #bottom-portraits {
     margin-left: 19.33%;
     overflow: hidden;
@@ -449,7 +543,7 @@ i {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   #team video{
     position: absolute;
     height: 400vh;
@@ -458,4 +552,3 @@ i {
     object-fit: fill;
   }
 }
-
