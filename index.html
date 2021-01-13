@@ -104,13 +104,48 @@
         <div class="six columns" id="technology-info">
           <img src="images/unity.png">
           <h3>Unity</h3>
-          <p> Unity has been used to ...</p>
+          <p> 
+            Unity is a popular cross-platform game engine. 
+            Unity was used as the base for our game and all game logic 
+            was handled by internal Unity components and by custom 
+            components written in the C# programming language; 
+            this includes player movement and interactions, physics, 
+            animation handling, sound, visual effects and more.
+          </p>
         </div>
 
         <div class="six columns" id="technology-info">
           <img src="images/blender.png">
           <h3>Blender</h3>
-          <p> Blender has been used for ...</p>
+          <p> 
+            Blender is an open-source 3D computer graphics software toolset. 
+            We used blender for all 3D-graphics in the game; this includes 3D-modeling, 
+            UV-mapping, rigging and animating the 3D-models and more.
+          </p>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="six columns" id="technology-info">
+          <img src="images/mirror_logo.png">
+          <h3>Mirror</h3>
+          <p>
+            Mirror is a high level Networking API for Unity. 
+            We used Mirror to handle all network traffic between the game clients 
+            and the game host/server; this includes spawning players, updating world state, 
+            tracking player and item positions/transforms and more.
+          </p>
+        </div>
+
+        <div class="six columns" id="technology-info">
+          <img src="images/CSP_logo.png">
+          <h3>Clip Studio Paint</h3>
+          <p>
+            Textures were drawn by hand and exported for use on our 3D-models using 
+            the illustration and drawing software Clip Studio Paint.
+          </p>
         </div>
 
       </div>
@@ -141,15 +176,15 @@
 
   <!-- Team page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <h2>The team</h2>
   <div id="team">
+    <h2>The team</h2>
     <video autoplay muted loop>
-      <source src="videos/clouds.mp4" type="video/mp4">
+      <source src="videos/Clouds.mp4" type="video/mp4">
     </video>
 
     <div id="team-content" class="container">
       <div class="row">
-        <div class="four columns">
+        <div class="four columns team-card">
           <img id="portrait" src="images/adelina.jpg">
           <h3>Adelina Andersen</h3>
           <h4> 3D Graphics | Interaction mechanics </h4>
@@ -160,26 +195,46 @@
           </p>
         </div>
 
-        <div class="four columns">
+        <div class="four columns team-card">
           <img id="portrait" src="images/lotta.jpg">
           <h3>Anne-Charlot Scholz</h3>
           <h4> 3D Graphics | Interaction mechanics </h4>
           <p>
-            Text about what we have done here, bla bla bla
+            In this project I was heavily involved in creating the 3D graphics for the game, 
+            which includes modelling of the game environment as well as characters and 
+            adding rigs and animations for them. Additionally, I had created first
+            drafts of a UI menu and a HUD display. I also worked on interaction mechanics 
+            such as the player picking up and counting the collected pineapples.  
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/anne-charlot-scholz-66674b182/" target="_blank"><img src="images/LInkedIn-32.png"></a>
+            <a href="mailto:acscholz@kth.se.com"><img style="width:30px; height:30px; padding-left:10px;" src="images/google-mail.png"></a>
           </p>
         </div>
 
-        <div class="four columns">
-          <img id="portrait" src="images/adelina.jpg">
+        <div class="four columns team-card">
+          <img id="portrait" src="images/Anton_Porsbjer.jpg">
           <h3>Anton Porsbjer</h3>
-          <h4> Gameplay | Network implementation </h4>
+          <h4> Gameplay | Network implementation | Git Master </h4>
           <p>
-            Text about what we have done here, bla bla bla
+            In this project i have mostly been working with gameplay programming 
+            and network implementation, that is implementing gameplay such as 
+            player interactions and movement, spawning players, updating the game state, 
+            tracking the players and items positions over the network. I have also been 
+            responsible for our git repository making sure that we follow a good branch 
+            structure and that merging goes smoothly.
           </p>
+          <p>
+            
+            <a href="https://github.com/antonporsbjer" target="_blank"><img src="images/GitHub-Mark-32px.png"></a>
+            <a href="https://se.linkedin.com/in/anton-porsbjer" target="_blank"><img src="images/LInkedIn-32.png"></a>
+            <a href="https://github.com/antonporsbjer" target="_blank"><img src="images/GitHub-Mark-32px.png"></a>
+          </p>
+          
         </div>
       </div>
 
-      <div id="bottom-portraits" class="row">
+      <div id="bottom-portraits team-card" class="row">
         <div class="four columns">
           <img id="portrait" src="images/adelina.jpg">
           <h3>Jenna Smulter</h3>
@@ -189,7 +244,7 @@
           </p>
         </div>
 
-        <div class="four columns">
+        <div class="four columns team-card">
           <img id="portrait" src="images/adelina.jpg">
           <h3>Konrad Wihl</h3>
           <h4> Interaction programming | Network </h4>

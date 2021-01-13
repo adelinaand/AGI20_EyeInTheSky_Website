@@ -519,6 +519,13 @@ i {
   padding: 15px; 
 }
 
+.team-card p{
+  padding-left: 5%; 
+  padding-right: 5%; 
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
 #portrait{
   width: 60%;
   border-radius: 50%;
