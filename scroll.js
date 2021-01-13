@@ -1,8 +1,6 @@
 $(document).ready(function () {
   
     $(window).scroll(function() { 
-        
-        var Top = $(window).scrollTop();
 
         var middle = $(window).scrollTop() + ($(window).height())/2;
 
