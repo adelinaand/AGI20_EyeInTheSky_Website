@@ -268,7 +268,8 @@ i {
 
 #justfy-text {
   text-align: justify;
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -649,7 +650,7 @@ i {
 #team-content{
   margin-top: 60px;
   background: rgba(255, 255, 255, 0.603);
-  padding: 15px; 
+  padding: 40px; 
 }
 
 #team-content a{
@@ -682,9 +683,8 @@ i {
 }
 
 #mail_pic {
-  width:30px; 
-  height:30px; 
-  padding-left:10px;
+  width:35px; 
+  height:35px; 
 }
 
 @media (min-width: 650px) {
