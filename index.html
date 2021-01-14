@@ -8,6 +8,7 @@
   <title>Eye in the Sky</title>
 
   <script src="scroll.js"></script>
+  <script src="imageGallery.js"></script>
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -167,7 +168,7 @@ During phase 2 we had reimagined the arena for the players and decided on floati
   <div id="theGame">
     <h2>The game</h2>
     <div id="game">
-      <img id="eyeintheSky" src="images/eyeintheskyimage.png">
+      <img id="eyeintheSky" src="images/eyeintheskyimage2.png">
       <div class="container">
         <img id="cloud" src="images/cloud.png">
         <p>Eye in the Sky is an asymmetric multiplayer game that can be played on a desktop or tablet.
@@ -179,7 +180,70 @@ During phase 2 we had reimagined the arena for the players and decided on floati
 
       <h2> Video here </h2>
 
-      <h2>Images here</h2>
+      <div id="image-gallery" class="container">
+        <h2>Gallery</h2>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot1.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot2.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot3.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot4.jpg">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot5.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot6.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot7.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot8.jpg">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot9.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot10.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot11.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot12.jpg">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- The Modal -->
+      <div id="ig-modal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modal-img">
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+        <a class="next" onclick="nextImg(1)">&#10095;</a>
+      </div>
+
     </div>
   </div>
 
@@ -248,7 +312,7 @@ During phase 2 we had reimagined the arena for the players and decided on floati
         </div>
 
         <div class="six columns">
-          <img id="portrait" src="images/adelina.jpg">
+          <img id="portrait" src="images/jenna.jpg">
           <h3>Jenna Smulter</h3>
           <h4> 2D & 3D Graphics </h4>
           <p>
