@@ -717,9 +717,18 @@ i {
 @media (max-width: 650px) {
   #team video{
     position: absolute;
-    height: 400vh;
+    height: 350vh;
     width: 100%;
     overflow: hidden;
     object-fit: fill;
   }
+
+  @media (max-width: 400px) {
+    #team video{
+      position: absolute;
+      height: 700vh;
+      width: 100%;
+      overflow: hidden;
+      object-fit: fill;
+    }
 }
