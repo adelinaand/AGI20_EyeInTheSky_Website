@@ -326,9 +326,11 @@ i {
   top: 0;
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
+#menu-items {
+  float: right;
+}
 
 .topnav a {
-  float: right;
   text-align: center;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -347,6 +349,8 @@ i {
 
 .current-menu-item {
   background:var(--secondary-color);
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 .menu-btn {
@@ -409,6 +413,7 @@ i {
       height: 100%;
       top: 0;
       box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+      padding-left: 5%;
   }
 
   .checkbox:checked ~ .topnav a{
@@ -416,7 +421,7 @@ i {
       float: right;
       clear: both;
       text-align: right;
-      margin-top: 10%;
+      margin-top: 15%;
       margin-right: 20px;
       margin-bottom: 10px;
   }

@@ -53,10 +53,12 @@
       </div>
     </label>
 
-    <a class="menu-item-4" href="#team">Team</a>
-    <a class="menu-item-3" href="#theGame">The Game</a>
-    <a class="menu-item-2" href="#technology">Technology</a>
-    <a class="menu-item-1" href="#about">About</a>
+    <div id="menu-items">
+      <a class="menu-item-1" href="#about">About</a>
+      <a class="menu-item-2" href="#technology">Technology</a>
+      <a class="menu-item-3" href="#theGame">The Game</a>
+      <a class="menu-item-4" href="#team">Team</a>
+    </div>
   </div>
 
   <!-- About page
@@ -87,46 +89,64 @@
         </div>
       </div>
 
-        <div class="twelve columns" id="about-section">
-          <h3 id="about-title"> Process </h3>
-          <p id="justfy-text"> 
-            Eye in the Sky is a project that was created over the course of around 16 weeks and the process was divided into two phases.
-          </p>
+      <div class="twelve columns" id="about-section">
+        <h3 id="about-title"> Process </h3>
+        <p id="justfy-text">
+          Eye in the Sky is a project that was created over the course of around 16 weeks and the process was divided
+          into two phases.
+        </p>
 
-          <p id="justfy-text">
-          <b>Phase 1</b><br/>
-          During the first phase a lot of focus was put on network implementation, cross-platform connection, augmented reality and movement of our 3d player. We also started creating models for the environment, which we had envisioned to be planets. Some difficulties came with having the game environment be spherical, since gravity and especially the player camera were difficult to implement. Parts of the environment were finished and we had our first AR prototype for Eye in the Sky on the tablet but it became clear that having a spherical game world would become too big of a challenge and therefore the decision was made to change plans and discard much of the work previously done. 
-          </p>
-          <p id="justfy-text"> 
-          <b>Phase 2</b><br/>
-            During phase 2 we had reimagined the arena for the players and decided on floating islands instead of the planets. These were modelled, colored and populated with old and new models. Characters were designed, modelled, rigged and animated. We also created crucial interaction mechanics, such as a jump pad for the player to use to jump between islands. Pineapples were added for the player to collect and a Heads Up Display (HUD) was programmed to count the pineapples as well as show a countdown. 
-            Instead of an AR implementation for the Eye in the Sky player, we opted for a gyroscope on the tablet and added a freeze interaction. Lastly, we created original music in the form of a theme for the game. 
-                         </p>
-          <p id="justfy-text">
-            Design and game mechanics were polished during the last weeks of the project work, as well as particle effects being added. 
-          </p>
-        </div>
+        <p id="justfy-text">
+          <b>Phase 1</b><br />
+          During the first phase a lot of focus was put on network implementation, cross-platform connection, augmented
+          reality and movement of our 3d player. We also started creating models for the environment, which we had
+          envisioned to be planets. Some difficulties came with having the game environment be spherical, since gravity
+          and especially the player camera were difficult to implement. Parts of the environment were finished and we
+          had our first AR prototype for Eye in the Sky on the tablet but it became clear that having a spherical game
+          world would become too big of a challenge and therefore the decision was made to change plans and discard much
+          of the work previously done.
+        </p>
+        <p id="justfy-text">
+          <b>Phase 2</b><br />
+          During phase 2 we had reimagined the arena for the players and decided on floating islands instead of the
+          planets. These were modelled, colored and populated with old and new models. Characters were designed,
+          modelled, rigged and animated. We also created crucial interaction mechanics, such as a jump pad for the
+          player to use to jump between islands. Pineapples were added for the player to collect and a Heads Up Display
+          (HUD) was programmed to count the pineapples as well as show a countdown.
+          Instead of an AR implementation for the Eye in the Sky player, we opted for a gyroscope on the tablet and
+          added a freeze interaction. Lastly, we created original music in the form of a theme for the game.
+        </p>
+        <p id="justfy-text">
+          Design and game mechanics were polished during the last weeks of the project work, as well as particle effects
+          being added.
+        </p>
+      </div>
 
-        <div class="twelve columns" id="about-section">
-          <h3 id="about-title"> Challenges </h3>
-          <p id="justfy-text"> 
-            We faced several obstacles during our project work, from which we learned to adapt and
-            compromise.
-          </p>
+      <div class="twelve columns" id="about-section">
+        <h3 id="about-title"> Challenges </h3>
+        <p id="justfy-text">
+          We faced several obstacles during our project work, from which we learned to adapt and
+          compromise.
+        </p>
 
-          <p id="justfy-text">
-            <b>Spherical game world</b><br/>
-            One challenge was the implementation of gravity for the spherical planets and the camera movement required for it. Sadly we didn’t have the time to overcome this challenge and instead adapted to a different option. 
-                      </p>
-          <p id="justfy-text"> 
-            <b>AR</b> <br/>
-            The implementation of AR on the tablet as a cross-platform game mechanic - which would have enabled the Eye in the Sky to walk around the room to view the game environment - showed to be very problematic. The synchronization between platforms was the main offender here and this problem could unfortunately not be solved. Instead, we resorted to having the player on the tablet use a gyroscope.                          </p>
-          <p id="justfy-text">
-            <b>Network</b>
-          </p>
-        </div>
+        <p id="justfy-text">
+          <b>Spherical game world</b><br />
+          One challenge was the implementation of gravity for the spherical planets and the camera movement required for
+          it. Sadly we didn’t have the time to overcome this challenge and instead adapted to a different option.
+        </p>
+        <p id="justfy-text">
+          <b>AR</b> <br />
+          The implementation of AR on the tablet as a cross-platform game mechanic - which would have enabled the Eye in
+          the Sky to walk around the room to view the game environment - showed to be very problematic. The
+          synchronization between platforms was the main offender here and this problem could unfortunately not be
+          solved. Instead, we resorted to having the player on the tablet use a gyroscope.
+        </p>
+        <p id="justfy-text">
+          <b>Network</b>
+        </p>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Technology page
@@ -140,12 +160,12 @@
         <div class="six columns" id="technology-info">
           <img src="images/unity.png">
           <h3>Unity</h3>
-          <p> 
-            Unity is a popular cross-platform game engine. 
-            Unity was used as the base for our game and all game logic 
-            was handled by internal Unity components and by custom 
-            components written in the C# programming language; 
-            this includes player movement and interactions, physics, 
+          <p>
+            Unity is a popular cross-platform game engine.
+            Unity was used as the base for our game and all game logic
+            was handled by internal Unity components and by custom
+            components written in the C# programming language;
+            this includes player movement and interactions, physics,
             animation handling, sound, visual effects and more.
           </p>
         </div>
@@ -153,24 +173,24 @@
         <div class="six columns" id="technology-info">
           <img src="images/blender.png">
           <h3>Blender</h3>
-          <p> 
-            Blender is an open-source 3D computer graphics software toolset. 
-            We used blender for all 3D-graphics in the game; this includes 3D-modeling, 
+          <p>
+            Blender is an open-source 3D computer graphics software toolset.
+            We used blender for all 3D-graphics in the game; this includes 3D-modeling,
             UV-mapping, rigging and animating the 3D-models and more.
           </p>
         </div>
       </div>
 
-      
+
 
       <div class="row">
         <div class="six columns" id="technology-info">
           <img src="images/mirror_logo.png">
           <h3>Mirror</h3>
           <p>
-            Mirror is a high level Networking API for Unity. 
-            We used Mirror to handle all network traffic between the game clients 
-            and the game host/server; this includes spawning players, updating world state, 
+            Mirror is a high level Networking API for Unity.
+            We used Mirror to handle all network traffic between the game clients
+            and the game host/server; this includes spawning players, updating world state,
             tracking player and item positions/transforms and more.
           </p>
         </div>
@@ -179,7 +199,7 @@
           <img src="images/CSP_logo.png">
           <h3>Clip Studio Paint</h3>
           <p>
-            Textures were drawn by hand and exported for use on our 3D-models using 
+            Textures were drawn by hand and exported for use on our 3D-models using
             the illustration and drawing software Clip Studio Paint.
           </p>
         </div>
@@ -289,12 +309,13 @@
           <h4> 3D Graphics | Interaction mechanics </h4>
           <p>
             During this project I have been involved in making 3D models and designing environments for the game.
-            I have also created the particle system for the home base area, indicating where the players should 
-            drop the pineapples. In addition I have also created the interaction mechanics for the jump pad which 
+            I have also created the particle system for the home base area, indicating where the players should
+            drop the pineapples. In addition I have also created the interaction mechanics for the jump pad which
             makes it possible to move between the different planets.
           </p>
           <p id="centered">
-            <a href="https://www.linkedin.com/in/adelina-andersen-b80633128/" target="_blank"><img src="images/LInkedIn-32.png"></a>
+            <a href="https://www.linkedin.com/in/adelina-andersen-b80633128/" target="_blank"><img
+                src="images/LInkedIn-32.png"></a>
             <a href="mailto:adelina.andersen@gmail.com"><img id="mail_pic" src="images/envelope.png"></a>
           </p>
         </div>
@@ -304,14 +325,15 @@
           <h3>Anne-Charlot Scholz</h3>
           <h4> 3D Graphics | Interaction mechanics </h4>
           <p>
-            In this project I was heavily involved in creating the 3D graphics for the game, 
-            which includes modelling of the game environment as well as characters and 
+            In this project I was heavily involved in creating the 3D graphics for the game,
+            which includes modelling of the game environment as well as characters and
             adding rigs and animations for them. Additionally, I had created first
-            drafts of a UI menu and a HUD display. I also worked on interaction mechanics 
-            such as the player picking up and counting the collected pineapples.  
+            drafts of a UI menu and a HUD display. I also worked on interaction mechanics
+            such as the player picking up and counting the collected pineapples.
           </p>
           <p id="centered">
-            <a href="https://www.linkedin.com/in/anne-charlot-scholz-66674b182/" target="_blank"><img src="images/LInkedIn-32.png"></a>
+            <a href="https://www.linkedin.com/in/anne-charlot-scholz-66674b182/" target="_blank"><img
+                src="images/LInkedIn-32.png"></a>
             <a href="mailto:acscholz@kth.se"><img id="mail_pic" src="images/envelope.png"></a>
           </p>
         </div>
@@ -323,20 +345,20 @@
           <h3>Anton Porsbjer</h3>
           <h4> Gameplay | Network implementation | Git Master </h4>
           <p>
-            In this project i have mostly been working with gameplay programming 
-            and network implementation, that is implementing gameplay such as 
-            player interactions and movement, spawning players, updating the game state, 
-            tracking the players and items positions over the network. I have also been 
-            responsible for our git repository making sure that we follow a good branch 
+            In this project i have mostly been working with gameplay programming
+            and network implementation, that is implementing gameplay such as
+            player interactions and movement, spawning players, updating the game state,
+            tracking the players and items positions over the network. I have also been
+            responsible for our git repository making sure that we follow a good branch
             structure and that merging goes smoothly.
           </p>
           <p id="centered">
-            
+
             <a href="https://github.com/antonporsbjer" target="_blank"><img src="images/GitHub-Mark-32px.png"></a>
             <a href="https://se.linkedin.com/in/anton-porsbjer" target="_blank"><img src="images/LInkedIn-32.png"></a>
             <a href="mailto:porsbjer@kth.se"><img id="mail_pic" src="images/envelope.png"></a>
           </p>
-          
+
         </div>
 
         <div class="six columns team-card">
@@ -356,15 +378,15 @@
         </div>
       </div>
 
-        <div class="twelve columns team-card">
-          <img id="portrait" src="images/adelina.jpg" style="width:20%">
-          <h3>Konrad Wihl</h3>
-          <h4> Interaction programming | Network </h4>
-          <p id="centered">
-            Text about what we have done here, bla bla bla
-          </p>
-        </div>
+      <div class="twelve columns team-card">
+        <img id="portrait" src="images/adelina.jpg" style="width:20%">
+        <h3>Konrad Wihl</h3>
+        <h4> Interaction programming | Network </h4>
+        <p id="centered">
+          Text about what we have done here, bla bla bla
+        </p>
       </div>
+    </div>
   </div>
 </body>
 
