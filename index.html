@@ -1,3 +1,7 @@
+<?php 
+  header ('Access-Control-Allow-Origin: *');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -228,7 +232,46 @@
         </p>
       </div>
 
-      <h2> Video here </h2>
+      <div id="image-gallery" class="container">
+        <h2>Videos</h2>
+
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/trailer.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/S19m_fc5Yfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/gameplaydemo.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/B2zd2DlGguc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>          </div>
+        </div>
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/makingof.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/bcWa7gRosXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>        </div>
+
+      </div>
+
+      <!-- The Video Modal -->
+      <div id="vid-modal" class="modal">
+
+        <!-- The Close Button -->
+        <span id="close-vid" class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <!--<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-i424bKe-kY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+        <a class="next" onclick="nextImg(1)">&#10095;</a>
+      </div>
 
       <div id="image-gallery" class="container">
         <h2>Gallery</h2>
@@ -284,7 +327,7 @@
       <div id="ig-modal" class="modal">
 
         <!-- The Close Button -->
-        <span class="close">&times;</span>
+        <span id="close-img" class="close">&times;</span>
 
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="modal-img">
