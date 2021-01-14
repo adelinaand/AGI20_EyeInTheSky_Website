@@ -681,6 +681,12 @@ i {
   text-align: center;
 }
 
+#mail_pic {
+  width:30px; 
+  height:30px; 
+  padding-left:10px;
+}
+
 @media (min-width: 650px) {
   #bottom-portraits {
     margin-left: 19.33%;
