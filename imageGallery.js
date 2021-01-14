@@ -8,7 +8,7 @@ $(document).ready(function () {
         modal.style.display = "block";
     });
     
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementById("close-img");
 
     function nextImg(n){
 
