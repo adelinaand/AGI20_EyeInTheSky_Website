@@ -669,6 +669,10 @@ i {
   color: #385c5e;
 }
 
+#centered {
+  text-align: center;
+}
+
 @media (min-width: 650px) {
   #bottom-portraits {
     margin-left: 19.33%;
