@@ -331,6 +331,7 @@ i {
 }
 
 .topnav a {
+  display: inline-block;
   text-align: center;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -350,7 +351,7 @@ i {
 .current-menu-item {
   background:var(--secondary-color);
   padding-top: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .menu-btn {
