@@ -38,7 +38,7 @@
     </video>
     <div class="container">
       <div class="center">
-        <a href="#topnav" class="button">Explore project</a>
+        <a href="#theGame" class="button">Explore project</a>
       </div>
     </div>
   </div>
@@ -58,12 +58,137 @@
     </label>
 
     <div id="menu-items">
-      <a class="menu-item-1" href="#about">About</a>
-      <a class="menu-item-2" href="#technology">Technology</a>
-      <a class="menu-item-3" href="#theGame">The Game</a>
+      <a class="menu-item-1" href="#theGame">The Game</a>
+      <a class="menu-item-2" href="#about">About</a>
+      <a class="menu-item-3" href="#technology">Technology</a>
       <a class="menu-item-4" href="#team">Team</a>
     </div>
   </div>
+
+   <!-- Game page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div id="theGame">
+    <div id="game">
+      <img id="eyeintheSky" src="images/eyeintheskyimage2.png">
+      <div class="container">
+        <img id="cloud" src="images/cloud.png">
+        <p>Eye in the Sky is an asymmetric multiplayer game that can be played on a desktop or tablet.
+          The players can either play on the ground and try to collect all pineapples and bring them back to the home
+          base before the time runs out or play as the <i>Eye in the Sky </i>
+          who tries to interfere with the other players and stop them from completing their mission.
+        </p>
+      </div>
+
+      <div id="image-gallery" class="container">
+        <h2>Videos</h2>
+
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/trailer.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/S19m_fc5Yfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/gameplaydemo.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/B2zd2DlGguc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>          </div>
+        </div>
+        <div class="row">
+          <div class="columns">
+            <!--<img class="vg-img" src="images/Thumbnails/makingof.png">-->
+            <div class="videoWrapper">
+              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/bcWa7gRosXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>        </div>
+
+      </div>
+
+      <!-- The Video Modal -->
+      <div id="vid-modal" class="modal">
+
+        <!-- The Close Button -->
+        <span id="close-vid" class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <!--<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-i424bKe-kY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+        <a class="next" onclick="nextImg(1)">&#10095;</a>
+      </div>
+
+      <div id="image-gallery" class="container">
+        <h2>Gallery</h2>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot1.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot2.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot3.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot4.jpg">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot5.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot6.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot7.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot8.jpg">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot9.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot10.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot11.jpg">
+          </div>
+          <div class="three columns">
+            <img class="ig-img" src="images/screenshots/screenshot12.jpg">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- The Modal -->
+      <div id="ig-modal" class="modal">
+
+        <!-- The Close Button -->
+        <span id="close-img" class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modal-img">
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+        <a class="next" onclick="nextImg(1)">&#10095;</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
 
   <!-- About page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -216,130 +341,7 @@
     </div>
   </div>
 
-  <!-- Game page
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div id="theGame">
-    <h2>The game</h2>
-    <div id="game">
-      <img id="eyeintheSky" src="images/eyeintheskyimage2.png">
-      <div class="container">
-        <img id="cloud" src="images/cloud.png">
-        <p>Eye in the Sky is an asymmetric multiplayer game that can be played on a desktop or tablet.
-          The players can either play on the ground and try to collect all pineapples and bring them back to the home
-          base before the time runs out or play as the <i>Eye in the Sky </i>
-          who tries to interfere with the other players and stop them from completing their mission.
-        </p>
-      </div>
-
-      <div id="image-gallery" class="container">
-        <h2>Videos</h2>
-
-        <div class="row">
-          <div class="columns">
-            <!--<img class="vg-img" src="images/Thumbnails/trailer.png">-->
-            <div class="videoWrapper">
-              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/S19m_fc5Yfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="columns">
-            <!--<img class="vg-img" src="images/Thumbnails/gameplaydemo.png">-->
-            <div class="videoWrapper">
-              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/B2zd2DlGguc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>          </div>
-        </div>
-        <div class="row">
-          <div class="columns">
-            <!--<img class="vg-img" src="images/Thumbnails/makingof.png">-->
-            <div class="videoWrapper">
-              <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/bcWa7gRosXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>        </div>
-
-      </div>
-
-      <!-- The Video Modal -->
-      <div id="vid-modal" class="modal">
-
-        <!-- The Close Button -->
-        <span id="close-vid" class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <!--<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-i424bKe-kY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
-        <a class="next" onclick="nextImg(1)">&#10095;</a>
-      </div>
-
-      <div id="image-gallery" class="container">
-        <h2>Gallery</h2>
-
-        <div class="row">
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot1.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot2.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot3.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot4.jpg">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot5.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot6.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot7.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot8.jpg">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot9.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot10.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot11.jpg">
-          </div>
-          <div class="three columns">
-            <img class="ig-img" src="images/screenshots/screenshot12.jpg">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- The Modal -->
-      <div id="ig-modal" class="modal">
-
-        <!-- The Close Button -->
-        <span id="close-img" class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="modal-img">
-
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
-        <a class="next" onclick="nextImg(1)">&#10095;</a>
-      </div>
-
-    </div>
-  </div>
-
+ 
   <!-- Team page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="team">

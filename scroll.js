@@ -4,9 +4,9 @@ $(document).ready(function () {
 
         var middle = $(window).scrollTop() + ($(window).height())/2;
 
-        SectionOneOffset = $('#about').offset().top, 
-        SectionTwoOffset = $('#technology').offset().top, 
-        SectionThreeOffset = $('#game').offset().top;
+        SectionOneOffset = $('#game').offset().top, 
+        SectionTwoOffset = $('#about').offset().top, 
+        SectionThreeOffset = $('#technology').offset().top;
         SectionFourOffset = $('#team').offset().top;
 
 
