@@ -107,20 +107,6 @@
 
       </div>
 
-      <!-- The Video Modal -->
-      <div id="vid-modal" class="modal">
-
-        <!-- The Close Button -->
-        <span id="close-vid" class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <!--<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-i424bKe-kY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="nextImg(-1)">&#10094;</a>
-        <a class="next" onclick="nextImg(1)">&#10095;</a>
-      </div>
-
       <div id="image-gallery" class="container">
         <h2>Gallery</h2>
 
@@ -180,9 +166,10 @@
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="modal-img">
 
-        <!-- Next/previous controls -->
+        <!-- Next/previous controls 
         <a class="prev" onclick="nextImg(-1)">&#10094;</a>
         <a class="next" onclick="nextImg(1)">&#10095;</a>
+        -->
       </div>
 
     </div>
@@ -205,7 +192,7 @@
       <div class="row">
         <div class="six columns" id="about-section">
           <h3 id="about-title"> Goal</h3>
-          <p id="justfy-text"> The goal of this project was to create an interactive social socially distant asymmetric
+          <p id="justfy-text"> The goal of this project was to create an interactive social socially-distant asymmetric
             multiplayer experience combining methods advanced computer graphics with advanced human-computer
             interaction. </p>
         </div>
@@ -308,6 +295,8 @@
             components written in the C# programming language;
             this includes player movement and interactions, physics,
             animation handling, sound, visual effects and more.
+            We chose to use Unity because of its capability for developing 
+            for multiple platforms simultaneously and its rich feature set.
           </p>
         </div>
 
@@ -318,6 +307,8 @@
             Blender is an open-source 3D computer graphics software toolset.
             We used blender for all 3D-graphics in the game; this includes 3D-modeling,
             UV-mapping, rigging and animating the 3D-models and more.
+            Blender was chosen as the tool for creation of our 3D-assets as it is 
+            open source and widely available, and a great tool for learning 3D-modeling.
           </p>
         </div>
       </div>
@@ -333,6 +324,9 @@
             We used Mirror to handle all network traffic between the game clients
             and the game host/server; this includes spawning players, updating world state,
             tracking player and item positions/transforms and more.
+            We chose to use Mirror as our network framework rather than Unity's 
+            built in network framework Unet or any other solution, 
+            sice Mirror builds on Unet making it very easy integrating it into Unity while fixing a lot of issues present in Unet.
           </p>
         </div>
 
